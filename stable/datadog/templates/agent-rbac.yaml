@@ -61,6 +61,7 @@ rules:
   - configmaps
   resourceNames:
   - datadog-leader-election  # Leader election token
+  - datadog-cluster-id # Cluster ID
 {{- if .Values.clusterAgent.metricsProvider.enabled }}
   - datadog-custom-metrics
   - extension-apiserver-authentication
